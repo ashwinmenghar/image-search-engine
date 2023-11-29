@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #fff;
+    /* background: #39297b; */
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    color: black;
+}
+
+form {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    height: 50px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+}
+
+form input {
+    flex: 1;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    color: grey;
+    font-size: 18px;
+    padding: 0px 30px;
+}
+form button {
+    padding: 0 40px;
+    height: 100%;
+    font-size: 18px;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /* 
+    background: #ff3929;
+    color: #fff;
+    border: 0;
+    */
+    cursor: pointer; 
+    background-color: #fff;
+    border-color: #d1d1d1;
+    color: #767676;
+    border: 1px solid #e0dcdc;
+}
+::placeholder {
+    color: grey;
+    font-size: 16px;
+}
+
+#show-more-btn {
+    background: #ff3929;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+}
+
+#search-result {
+    width: 100%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 40px; */
+}
+
+ /* #search-result img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+} */
+
+
+
+
+ .gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+}
+.gallery__link {
+    margin: 8px;
+    overflow: hidden;
+}
+
+.gallery__link:hover .gallery__caption {
+    opacity: 1;
+}
+.gallery__thumb {
+    position: relative;
+}
+.gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+.gallery__image:hover {
+    transform: scale(1.1);
+}
+.gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgb(211 197 197 / 50%) 0%, rgb(149 58 58 / 0%) 100%) !important;
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-icon{
+    height: 20px;
+    background: #fff;
+    padding: 4px;
+}
