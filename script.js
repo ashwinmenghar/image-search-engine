@@ -24,7 +24,7 @@ async function searchImage() {
     searchResult.innerHTML = "";
   }
 
-  console.log(data);
+``
   const results = data.results;
 //   const results = links.results;
 
